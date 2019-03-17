@@ -24,6 +24,13 @@
         default: ''
       },
       /***
+       * Path to image file to use in lieu of an icon class.
+       */
+      image: {
+        type: String,
+        default: null
+      },
+      /***
        * Function to execute before tab switch. Return value must be boolean
        * If the return result is false, tab switch is restricted
        */
