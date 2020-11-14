@@ -22,8 +22,8 @@
         </div>
         <slot v-if="!tab.active">
           <img v-if="tab.image" :src="tab.image">
-          <i v-else-if="!tab.active && tab.icon" :class="tab.icon" class="wizard-icon"></i>
-          <i v-if="!tab.active && !tab.icon" class="wizard-icon">{{index + 1}}</i>
+          <i v-else-if="tab.icon" :class="tab.icon" class="wizard-icon"></i>
+          <i v-else class="wizard-icon">{{index + 1}}</i>
         </slot>
       </div>
       <slot name="title">
